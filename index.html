@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sainath Naidu | Romantic & Creative Space</title>
+    <!-- Google Fonts for a soft, elegant look -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1f1c2c 0%, #928DAB 100%);
+            background-attachment: fixed;
+            color: #f3f3f3;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        /* Ambient floating romantic particles or glow */
+        .glow-bg {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 154, 158, 0.3);
+            filter: blur(100px);
+            border-radius: 50%;
+            z-index: -1;
+            top: 10%;
+            left: 20%;
+            animation: float 8s ease-in-out infinite alternate;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0) scale(1); }
+            100% { transform: translateY(-30px) scale(1.1); }
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 24px;
+            padding: 40px 25px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile-img-container {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px auto;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid rgba(255, 182, 193, 0.8);
+            box-shadow: 0 0 20px rgba(255, 182, 193, 0.4);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #fff;
+            letter-spacing: 0.5px;
+        }
+
+        .handle {
+            font-size: 0.95rem;
+            color: #ffb6c1;
+            margin-bottom: 15px;
+            font-weight: 300;
+        }
+
+        .bio {
+            font-size: 0.9rem;
+            color: #e0e0e0;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .links-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.12);
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 20px;
+            border-radius: 50px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .link-card:hover {
+            background: rgba(255, 182, 193, 0.25);
+            border-color: rgba(255, 182, 193, 0.6);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 182, 193, 0.2);
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.6);
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glow-bg"></div>
+
+    <div class="container">
+        <!-- Profile Picture (Replace with your actual image link if you want) -->
+        <div class="profile-img-container">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80" alt="Sainath Naidu" class="profile-img">
+        </div>
+
+        <h1>Settipalli Sainath</h1>
+        <div class="handle">@_sainath_naidu</div>
+        <p class="bio">"Capturing moments, creating memories, and living with passion and heart."</p>
+
+        <div class="links-list">
+            <a href="https://www.instagram.com/_sainath_naidu" target="_blank" class="link-card">
+                ✨ Connect on Instagram
+            </a>
+            <a href="#" class="link-card">
+                💌 Send a Special Note
+            </a>
+            <a href="#" class="link-card">
+                💫 My Favorite Moments
+            </a>
+        </div>
+
+        <div class="footer">
+            Crafted with love &copy; 2026
+        </div>
+    </div>
+
+</body>
+</html>
